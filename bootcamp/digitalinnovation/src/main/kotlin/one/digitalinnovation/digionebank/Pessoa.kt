@@ -5,15 +5,15 @@ class Pessoa {
     var cpf : String = "123.123.123-11"
     private set
 
-    inner class Endereco {
-    var rua : String = "Rua teste"
-    }
+    
+
+    fun pessoaInfo() = "$nome e $cpf"
 }
 
 fun main() {
-    val Robson = Pessoa()
+    val robson = Pessoa()
 
-    println(Robson.nome + " Esse é o nome dele \n")
-    println(Robson.cpf)
-    println(Robson.Endereco().rua)
+
+    println(robson.pessoaInfo())
+
 }
