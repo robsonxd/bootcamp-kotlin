@@ -8,7 +8,6 @@ class ImprimeRelatorioFuncionario {
             println(
                 funcionario.toString()
             )
-
         }
     }
 }
