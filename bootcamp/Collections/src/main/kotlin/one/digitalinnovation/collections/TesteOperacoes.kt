@@ -6,9 +6,9 @@ fun main() {
     for (salario in salarios) {
         println(salario)
     }
-    println("========================")
-    println("Maior salário é: ${salarios.max()}")
-    println("Menor salário é: ${salarios.min()}")
+    println("max or null ========================")
+    println("Maior salário é: ${salarios.maxOrNull()}")
+    println("Menor salário é: ${salarios.minOrNull()}")
     println("Média salário é: ${salarios.average()}")
 
     println("========================")
