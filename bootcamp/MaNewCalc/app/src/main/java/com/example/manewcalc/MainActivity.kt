@@ -1,6 +1,8 @@
 package com.example.manewcalc
 
 import android.content.Context
+import android.graphics.Color
+import android.graphics.Color.GREEN
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,10 +27,12 @@ class MainActivity : AppCompatActivity() {
             if (media >=8 && faltas <=6) {
                 resultado.setText("Aluno foi Aprovado" + "\n" + "Nota Final: "+ media+"\n"+ "Faltas: "+faltas)
                 resultado.hideKeyboard()
+                resultado.setTextColor(Color.GREEN)
             }
             else {
                 resultado.setText("Aluno foi Reprovado" + "\n" + "Nota Final: "+ media+"\n"+ "Faltas: "+faltas)
                 resultado.hideKeyboard()
+                resultado.setTextColor(Color.RED)
             }
         }
 
