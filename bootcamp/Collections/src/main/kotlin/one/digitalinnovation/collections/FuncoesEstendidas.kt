@@ -3,7 +3,7 @@ package one.digitalinnovation.collections
 import java.math.BigDecimal
 
 fun Array<BigDecimal>.somatoria() = this.reduce {
-        acc, valor -> acc * valor
+        acc, valor -> acc + valor
 
 }
 

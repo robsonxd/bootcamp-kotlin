@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nota1">nota1</string>
+    <string name="nota2">Nota2</string>
+    <string name="faltas">faltas</string>
+    <string name="calcular">calcular</string>
+</resources>
