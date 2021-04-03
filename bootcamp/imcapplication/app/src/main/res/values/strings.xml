@@ -3,4 +3,6 @@
     <string name="new_radio">Novo Botão</string>
     <string name="hello_word">Hello World!</string>
     <string name="hi_checkbox">Olá checkbox</string>
+    <string name="hi_radio">Olá botão</string>
+    <string name="hello_world">Hello World</string>
 </resources>
