@@ -6,7 +6,7 @@ export default {
     checkToken: async (token) => {
         const req = await fetch(`${BASE_API}/auth/refresh`, {
             method: 'POST',
-            headers:{
+            headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json'
             },
@@ -17,9 +17,6 @@ export default {
 
     },
     signIn: async (email, password) => {
-        console.log("email", email);
-        console.log("password", password);
-
         const req = await fetch(`${BASE_API}/auth/login`, {
             method: 'POST',
             headers: {
