@@ -5,7 +5,7 @@ import {  Container } from './styles';
 export default () => {
     return (
         <Container>
-            <Text>Search</Text>
+            <Text color="FFF">Search</Text>
         </Container>
     );
 }

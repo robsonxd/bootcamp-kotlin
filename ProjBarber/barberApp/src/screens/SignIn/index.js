@@ -32,9 +32,7 @@ export default () => {
     const handleSignClick  = async () => {
         if(emailField != '' && passwordField != '') {
             
-
             let json = await Api.signIn(emailField, passwordField);
-            
             if(json.token) {
                 await AsyncStorage.setItem('token', json.token);
 
@@ -57,7 +55,6 @@ export default () => {
         }
     }
 
-
     const handleMessageButtonClick = () => {
         //vai jogar o usuário para tela de cadastro
         navigation.reset({
@@ -77,7 +74,6 @@ export default () => {
                     onChangeText={t=>setEmailField(t)}
                 />
             
-
                 <SignInput 
                     IconSvg={LockIcon}
                     placeholder="Digite sua senha"
@@ -96,7 +92,6 @@ export default () => {
                 <SignMessageButtonText>Ainda não possui uma conta?</SignMessageButtonText>
                 <SignMessageButtonTextBold>Cadastre-se</SignMessageButtonTextBold>
             </SignMessageButton>
-
 
         </Container>
     );
