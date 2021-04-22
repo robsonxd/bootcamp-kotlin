@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">imcapplication</string>
     <string name="new_radio">Novo Botão</string>
-    <string name="hello_word">Hello World!</string>
+    <string name="hello_word">IMC!</string>
     <string name="hi_checkbox">Olá checkbox</string>
     <string name="hi_radio">Olá botão</string>
     <string name="hello_world">Hello World</string>
+    <string name="calcularBTN">Calcular</string>
+    <string name="calcular">Calcular</string>
+    <string name="altura_em_cm_ex_1_78">Altura em cm (ex 1.78)</string>
+    <string name="peso_em_kg_ex_70_9">Peso em KG (ex: 70.9)</string>
 </resources>

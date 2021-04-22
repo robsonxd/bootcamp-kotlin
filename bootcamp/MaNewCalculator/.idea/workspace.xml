@@ -25,11 +25,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="326424f0-0755-4172-a75f-b25b732a230d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CaculadoraMedia/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CaculadoraMedia/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CaculadoraMedia/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CaculadoraMedia/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CaculadoraMedia/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CaculadoraMedia/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Collections/src/main/kotlin/one/digitalinnovation/collections/FuncoesEstendidas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Collections/src/main/kotlin/one/digitalinnovation/collections/FuncoesEstendidas.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Collections/target/classes/one/digitalinnovation/collections/FuncoesEstendidasKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Collections/target/classes/one/digitalinnovation/collections/FuncoesEstendidasKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Curso React Udemy/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Curso React Udemy/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../aula_html5_css3" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula_html5_css3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaculadoraMedia/app/src/main/java/com/example/caculadoramedia/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../CaculadoraMedia/app/src/main/java/com/example/caculadoramedia/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MaNewCalc/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MaNewCalc/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MaNewCalc/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MaNewCalc/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../imcapplication/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../imcapplication/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../imcapplication/app/src/main/res/layout/main_linear.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../imcapplication/app/src/main/res/layout/main_linear.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../imcapplication/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../imcapplication/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../imcapplication/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../imcapplication/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,16 +66,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Logica-programacao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MaNewCalc" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="MaNewCalculator.app" />
@@ -125,9 +128,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -153,11 +154,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1617256876759">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1618982355959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1617256876759" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.768@0.0.1366.728" timestamp="1618982355959" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1618879239788" />
   </component>
 </project>

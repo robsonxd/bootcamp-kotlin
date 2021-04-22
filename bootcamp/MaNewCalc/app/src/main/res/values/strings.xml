@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">MaNewCalc</string>
-    <string name="nota1">nota1</string>
-    <string name="nota2">Nota2</string>
-    <string name="faltas">faltas</string>
-    <string name="Calcular">calcular</string>
-</resources>

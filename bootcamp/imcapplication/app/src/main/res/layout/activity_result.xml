@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="154dp"
+        android:layout_height="83dp"
+        android:text="OLAR OLAR OLAR"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="296dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

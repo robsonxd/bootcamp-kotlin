@@ -5,7 +5,7 @@
     android:gravity="center"
     android:layout_height="match_parent"
     >
-    <TextView
+    t<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -20,17 +20,7 @@
         android:textSize="24sp"
         style="@style/title_purple"/>
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:text="@string/hi_radio"
-        style="@style/title_purple"
-        android:layout_height="wrap_content"
-        />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hi_checkbox" />
 
 
 </LinearLayout>
