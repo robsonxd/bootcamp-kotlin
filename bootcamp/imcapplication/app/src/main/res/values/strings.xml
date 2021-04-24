@@ -10,4 +10,8 @@
     <string name="altura_em_cm_ex_1_78">Altura em cm (ex 1.78)</string>
     <string name="peso_em_kg_ex_70_9">Peso em KG (ex: 70.9)</string>
     <string name="maisInfo">Informações</string>
+    <string name="duvida">Existe diferença entre o IMC feminino e o masculino?</string>
+    <string name="o_imc_feminino">O IMC feminino não difere muito do masculino, pois, apesar das diferenças físicas entre homens e mulheres, principalmente na distribuição do peso no corpo, a média final se equilibra com a altura e não há diferença no cálculo entre os sexos.
+
+</string>
 </resources>
