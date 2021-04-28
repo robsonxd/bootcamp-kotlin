@@ -67,9 +67,9 @@ class NotesProvider : ContentProvider() {
             }
             mUriMatcher.match(uri) == NOTES_BY_ID -> {
                 val db: SQLiteDatabase = dbHelper.writableDatabase
-                val cursor = db.query(TABLE_NOTES, projection, "$_ID = ?", arrayOf(uri.lastPathSegment),
-                cursor.setNotificationUri(context as Context).contentResolver, uri)
-                cursor
+                val cursor = db.query(TABLE_NOTES, projection, "$_ID = ?", arrayOf(uri.lastPathSegment), null, null, sortOrder)
+                        cursor.setNotificationUri(context?.contentResolver, uri)
+                        cursor
             }
             else -> {
                 throw UnsupportedSchemeException("Uri não implementada")
@@ -79,9 +79,16 @@ class NotesProvider : ContentProvider() {
 
     override fun update(
         uri: Uri, values: ContentValues?, selection: String?,
-        selectionArgs: Array<String>?
-    ): Int {
-        TODO("Implement this to handle requests to update one or more rows.")
+        selectionArgs: Array<String>?): Int {
+        if (mUriMatcher.match(uri) == NOTES_BY_ID) {
+            val db: SQLiteDatabase = dbHelper.writableDatabase
+            val linesAffect = db.update(TABLE_NOTES, values,"$_ID = ?", arrayOf(uri.lastPathSegment))
+            db.close()
+            context.contentResolver?.notifyChange(uri, null)
+            return linesAffect
+        } else {
+            throw UnsupportedSchemeException("Uri não implementada")
+        }
     }
 
     companion object {
