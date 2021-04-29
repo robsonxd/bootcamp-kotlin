@@ -23,8 +23,6 @@ class NotesProvider : ContentProvider() {
         mUriMatcher.addURI(AUTHORITY, "notes/#", NOTES_BY_ID)
         if (context != null) { dbHelper = NotesDatabaseHelper(context as Context) }
             return true
-
-        return true
     }
 
     override fun delete(uri: Uri, selection: String?, selectionArgs: Array<String>?): Int {
@@ -32,7 +30,7 @@ class NotesProvider : ContentProvider() {
             val db: SQLiteDatabase = dbHelper.writableDatabase
            val linesAffect = db.delete(TABLE_NOTES, "$_ID =?", arrayOf(uri.lastPathSegment))
            db.close()
-           context.contentResolver?.notifyChange(uri, null)
+           context?.contentResolver?.notifyChange(uri, null)
            return linesAffect
        } else {
            throw UnsupportedSchemeException("Uri inválida para exclusão!")
@@ -54,20 +52,19 @@ class NotesProvider : ContentProvider() {
         }
     }
 
-    override fun query(
-        uri: Uri, projection: Array<String>?, selection: String?,
-        selectionArgs: Array<String>?, sortOrder: String?): Cursor? {
+    override fun query(uri: Uri, projection: Array<String>?, selection: String?,
+                        selectionArgs: Array<String>?, sortOrder: String?): Cursor? {
         return when {
             mUriMatcher.match(uri) == NOTES -> {
-                val db:SQLiteDatabase = dbHelper.writableDatabase
-                val cursor =
+                val db: SQLiteDatabase = dbHelper.writableDatabase
+                val cursor: Cursor =
                     db.query(TABLE_NOTES, projection, selection, selectionArgs, null, null, sortOrder)
                 cursor.setNotificationUri(context?.contentResolver, uri)
                 cursor
             }
             mUriMatcher.match(uri) == NOTES_BY_ID -> {
                 val db: SQLiteDatabase = dbHelper.writableDatabase
-                val cursor = db.query(TABLE_NOTES, projection, "$_ID = ?", arrayOf(uri.lastPathSegment), null, null, sortOrder)
+                val cursor:Cursor = db.query(TABLE_NOTES, projection, "$_ID = ?", arrayOf(uri.lastPathSegment), null, null, sortOrder)
                         cursor.setNotificationUri(context?.contentResolver, uri)
                         cursor
             }
@@ -77,14 +74,13 @@ class NotesProvider : ContentProvider() {
         }
     }
 
-    override fun update(
-        uri: Uri, values: ContentValues?, selection: String?,
-        selectionArgs: Array<String>?): Int {
+    override fun update(uri: Uri, values: ContentValues?, selection: String?,
+                        selectionArgs: Array<String>?): Int {
         if (mUriMatcher.match(uri) == NOTES_BY_ID) {
             val db: SQLiteDatabase = dbHelper.writableDatabase
-            val linesAffect = db.update(TABLE_NOTES, values,"$_ID = ?", arrayOf(uri.lastPathSegment))
+            val linesAffect:Int = db.update(TABLE_NOTES, values,"$_ID = ?", arrayOf(uri.lastPathSegment))
             db.close()
-            context.contentResolver?.notifyChange(uri, null)
+            context?.contentResolver?.notifyChange(uri, null)
             return linesAffect
         } else {
             throw UnsupportedSchemeException("Uri não implementada")
@@ -93,7 +89,7 @@ class NotesProvider : ContentProvider() {
 
     companion object {
         const val AUTHORITY = "com.robx.applicationcontentprovider.provider"
-        const val BASE_URI = Uri.parse("content://$AUTHORITY")
+        val BASE_URI = Uri.parse("content://$AUTHORITY")
         val URI_NOTES = Uri.withAppendedPath(BASE_URI, "notes")
 
         const val NOTES = 1
