@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616453725641",
+    "project_id": "app-notification-8773e",
+    "storage_bucket": "app-notification-8773e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616453725641:android:b72cc786380a8d81325c18",
+        "android_client_info": {
+          "package_name": "com.robx.appnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616453725641-9jtpgvk62jhl52riddr2b3g068qqo1gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHWCOAXaJvS0FBk2avJNOfPV5CvGr4668"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616453725641-9jtpgvk62jhl52riddr2b3g068qqo1gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
