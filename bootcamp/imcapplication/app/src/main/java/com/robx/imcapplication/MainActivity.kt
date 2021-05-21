@@ -7,38 +7,46 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
+    companion object {
+        var novoImc = "imc"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setListeners()
-
+        var attempt = findViewById<TextView>(R.id.resultadoTXT)
         infoBTN.setOnClickListener {
             val intent = Intent(this, Tela2::class.java)
+
+
+            val str: String = attempt.text.toString()
+            intent.putExtra(novoImc, str)
             startActivity(intent)
-
-
         }
-    }
-        private fun setListeners() {
 
+
+    }
+         fun setListeners() {
             calcularBTN.setOnClickListener {
                 calcularIMC(pesoEDT.text.toString(), alturaEDT.text.toString())
             }
 
         }
-        private fun calcularIMC (peso: String, altura: String) {
+     fun calcularIMC (peso: String, altura: String) {
             val peso = peso.toFloatOrNull()
             val altura = altura.toFloatOrNull()
             if (peso != null && altura != null) {
                 val imc = peso / (altura * altura)
-                resultadoTXT.text ="Seu Imc é $imc"
+                resultadoTXT.text ="Seu IMC é: ${"%.2f".format(imc)}"
                 calcularBTN.hideKeyboard()
 
             }

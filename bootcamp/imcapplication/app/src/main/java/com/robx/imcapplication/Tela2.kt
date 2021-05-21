@@ -11,6 +11,10 @@ class Tela2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela2)
 
+        var getImc = intent.getStringExtra(MainActivity.novoImc)
+
+        resultadoIMC.setText(getImc)
+
         voltarBTN.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
